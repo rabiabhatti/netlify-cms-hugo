@@ -1,8 +1,7 @@
 {{ $script := .Site.Data.webpack_assets.app }}
 {{ with $script.js }}
-<script src="{{ relURL (printf "%s%s" "dist/" .) }}"></script>
+<script src="{{ relURL (printf " %s%s" "dist/" .) }}"></script>
 {{ end }}
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

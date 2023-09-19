@@ -1,4 +1,41 @@
-baseURL = "http://example.org/"
+baseurl = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+languageLang = "en"
+title = "Homepage"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+
+
+[params]
+    title = "Shoes Adviser"
+    fullTitle = "Shoes Adviser | Reviews, Guides & Buying Advice From Experts"
+    url = "https://shoesadviser.com/"
+    amazonTag = 'shoesadviser07-20'
+    domain = "shoesadviser.com"
+    logo = "/img/logo/shoesadviser-logo.svg"
+    logoJPG = "/img/logo/shoesadviser-logo.svg"
+    logoSVG = "/img/logo/shoesadviser-logo.svg"
+    description = "Shoes Adviser is the ultimate guide to choosing shoes. We combine expert buying advice with reviews, guides & news to help you find the best shoe for your needs."
+    keywords = "Shoes Adviser, running shoes reviews, running reviews, reviews on shoes, running shoes review, shoe reviews, sneaker review, reviews running shoes, shoes reviews, running shoe review, running shoe reviews"
+    author = "Rabia Iqbal"
+    gender = "Female"
+    jobTitle = "CEO"
+    authorTwitter = "@RabiaIBhatti"
+    authorImage = "https://shoesadviser.com/img/rabia-iqbal.jpg"
+    authorLink = "https://www.linkedin.com/in/rabia-bhatti/"
+    foundingDate = "2021-11-18"
+    fbLink = "https://www.facebook.com/shoesadviser"
+    advertiseLink = "mailto:advertising@shoesadviser.com"
+    supportEmail = "support@shoesadviser.com"
+    mail = "advertising@shoesadviser.com"
+
+
+[markup.goldmark.renderer]
+    unsafe= true
+
+[sitemap]
+    filename = "sitemap.xml"
